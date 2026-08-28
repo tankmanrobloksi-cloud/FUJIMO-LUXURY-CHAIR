@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин Массажных Кресел | Альметьевск</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #1a1a1a; color: #ffffff; padding: 20px; line-height: 1.6; }
+        header { text-align: center; margin-bottom: 40px; padding: 30px; background-color: #262626; border-radius: 8px; border: 1px solid #333; }
+        header h1 { color: #ff3b30; font-size: 32px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+        .contacts { color: #ccc; font-size: 18px; }
+        .phone-link { color: #ffcc00; text-decoration: none; font-weight: bold; }
+        .phone-link:hover { color: #ff3b30; text-decoration: underline; }
+        
+        .catalog { max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 30px; }
+        .product-block { background-color: #262626; border-radius: 8px; padding: 30px; border: 1px solid #333; position: relative; }
+        .product-block:hover { border-color: #ff3b30; }
+        
+        .badge { position: absolute; top: 20px; right: 20px; padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: bold; text-transform: uppercase; }
+        .badge-hit { background-color: #ffcc00; color: #000; }
+        .badge-new { background-color: #28a745; color: #fff; }
+
+        .product-header { margin-bottom: 15px; padding-right: 80px; }
+        .title { font-size: 24px; color: #fff; font-weight: bold; margin-bottom: 5px; }
+        
+        .price-block { margin-bottom: 20px; display: flex; align-items: baseline; gap: 15px; }
+        .current-price { font-size: 24px; font-weight: bold; color: #ff3b30; }
+        .old-price { font-size: 16px; color: #777; text-decoration: line-through; }
+        
+        .section-title { font-size: 16px; color: #ffcc00; font-weight: bold; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .description { color: #e0e0e0; font-size: 15px; margin-bottom: 25px; text-align: justify; }
+        
+        .specs-table { width: 100%; border-collapse: collapse; margin-bottom: 25px; background-color: #1e1e1e; border-radius: 6px; overflow: hidden; }
+        .specs-table td { padding: 10px 15px; font-size: 14px; border-bottom: 1px solid #2d2d2d; }
+        .specs-table td:first-child { color: #aaa; width: 45%; font-weight: 500; }
+        .specs-table td:last-child { color: #fff; }
+        .specs-table tr:last-child td { border-bottom: none; }
+        
+        .btn-buy { display: inline-block; padding: 12px 35px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 15px; background-color: #e60000; color: #fff; text-transform: uppercase; letter-spacing: 1px; transition: background-color 0.2s; text-decoration: none; text-align: center; }
+        .btn-buy:hover { background-color: #ff1a1a; }
+        
+        footer { text-align: center; margin-top: 60px; padding: 40px; color: #666; font-size: 14px; border-top: 1px solid #2d2d2d; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Премиальные Массажные Кресла</h1>
+        <p class="contacts">📍 г. Альметьевск, ул. Тукая, д. 80<br>📞 Телефон для справок: <a href="tel:+79173979853" class="phone-link">+7 (917) 397-98-53</a></p>
+    </header>
+
+    <main class="catalog">
+        
+        <!-- 1 -->
+        <div class="product-block">
+            <span class="badge badge-new">New (-29%)</span>
+            <div class="product-header">
+                <div class="title">FUJIMO FLEXOR F500 Шампань</div>
+                <div class="price-block">
+                    <span class="current-price">560 000 ₽</span>
+                    <span class="old-price">790 000 ₽</span>
+                </div>
+            </div>
+            <div class="section-title">Подробное описание модели:</div>
+            <div class="description">Японское массажное кресло с уникальной оздоровительной техникой растяжки МАККО-ХО. Технология Double Motion Flex позволяет изменять угол наклона SL-образной направляющей каретки до 170 градусов для глубокого разминания.</div>
+            <div class="section-title">Технические характеристики:</div>
+            <table class="specs-table">
+                <tr><td>Тип механизма</td><td>Инновационный 3D Airmatic Human-Like</td></tr>
+                <tr><td>Траектория каретки</td><td>Гибкий трек Double Motion Flex (135 см)</td></tr>
+                <tr><td>Автопрограммы</td><td>18 оздоровительных режимов</td></tr>
+            </table>
+            <a href="https://web.max.ru/84845634" target="_blank" class="btn-buy">🛒 ЗАКАЗАТЬ КРЕСЛО В ЧАТЕ</a>
+        </div>
+
+        <!-- 2 -->
+        <div class="product-block">
+            <span class="badge badge-hit">Hit (-41%)</span>
+            <div class="product-header">
+                <div class="title">FUJIMO Pegasus PRO / QI F633</div>
+                <div class="price-block">
+                    <span class="current-price">590 000 ₽</span>
+                    <span class="old-price">999 000 ₽</span>
+                </div>
+            </div>
+            <div class="section-title">Подробное описание модели:</div>
+            <div class="description">Эргономичное интеллектуальное кресло с системой распознавания контуров тела. Полностью русифицировано и поддерживает легкое голосовое управление, позволяя менять режимы массажа без пульта.</div>
+            <div class="section-title">Технические характеристики:</div>
+            <table class="specs-table">
+                <tr><td>Тип механизма</td><td>Усиленный 4D механизм с регулировкой вылета</td></tr>
+                <tr><td>Управление</td><td>Голосовое управление на русском языке + тач-скрин</td></tr>
+                <tr><td>Компрессия</td><td>40 многокамерных блоков с независимыми клапанами</td></tr>
+            </table>
+            <a href="https://web.max.ru/84845634" target="_blank" class="btn-buy">🛒 ЗАКАЗАТЬ КРЕСЛО В ЧАТЕ</a>
+        </div>
+
+        <!-- 3 (ИСПРАВЛЕННАЯ ОШИБКА) -->
+        <div class="product-block">
+            <span class="badge badge-hit" style="background-color: #ff3b30; color: #fff;">-20%</span>
+            <div class="product-header">
+                <div class="title">FUJIMO Combat 4D Серый</div>
+                <div class="price-block">
+                    <span class="current-price">479 000 ₽</span>
+                    <span class="old-price">590 000 ₽</span>
+                </div>
+            </div>
+            <div class="section-title">Подробное описание модели:</div>
+            <div class="description">Силовое массажное кресло повышенной интенсивности для тщательной проработки жестких, зажатых мышц. Роботизированный 4D-механизм обладает увеличенным вылетом роликов более 8 см для глубокого разминания.</div>
+            <div class="section-title">Технические характеристики:</div>
+            <table class="specs-table">
+                <tr><td>Тип механизма</td><td>Интенсивный силовой 4D механизм глубокого действия</td></tr>
+                <tr><td>Вылет роликов</td><td>Регулируемый, до 8.5 см в глубину тканей</td></tr>
+                <tr><td>Программа вытяжения</td><td>Активная фиксация подушками со спортивным скручиванием</td></tr>
+            </table>
+            <a href="https://web.max.ru/84845634" target="_blank" class="btn-buy">🛒 ЗАКАЗАТЬ КРЕСЛО В ЧАТЕ</a>
+        </div>
+
+        <!-- 4 -->
+        <div class="product-block">
+            <span class="badge badge-new">NEW</span>
+            <div class="product-header">
+                <div class="title">FUJIMO Ton PRO F388</div>
+                <div class="price-block">
+                    <span class="current-price">425 000 ₽</span>
+                    <span class="old-price">550 000 ₽</span>
+                </div>
+            </div>
+            <div class="section-title">Подробное описание модели:</div>
+            <div class="description">Сбалансированная модель с акцентом на аккуратный терапевтический массаж и AI-сканирование мышечного тонуса перед каждым сеансом.</div>
+            <div class="section-title">Технические характеристики:</div>
+            <table class="specs-table">
+                <tr><td>Механизм</td><td>Умный 3D/4D привод деликатного давления</td></tr>
+                <tr><td>Зоны обогрева</td><td>Спина, поясничная область, стопы</td></tr>
+            </table>
+            <a href="https://web.max.ru/84845634" target="_blank" class="btn-buy">🛒 ЗАКАЗАТЬ КРЕСЛО В ЧАТЕ</a>
+        </div>
+
+        <!-- 5 -->
+        <div class="product-block">
+            <span class="badge badge-hit">HIT</span>
+            <div class="product-header">
+                <div class="title">FUJIMO Master Chi F788</div>
+                <div class="price-block">
+                    <span class="current-price">495 000 ₽</span>
+                    <span class="old-price">630 000 ₽</span>
+                </div>
+            </div>
+            <div class="section-title">Подробное описание модели:</div>
+            <div class="description">Модель премиум-комфорта с глубоким 8D-эффектом за счет синхронной работы парных роликовых платформ, идеально снимает зажимы в лопатках.</div>
+            <div class="section-title">Технические характеристики:</div>
+            <table class="specs-table">
+                <tr><td>Механизм</td><td>Синхронизированный мульти-роликовый 4D блок</td></tr>
+                <tr><td>Подушки</td><td>38 лимфодренажных клапанов</td></tr>
+            </table>
+            <a href="https://web.max.ru/84845634" target="_blank" class="btn-buy">🛒 ЗАКАЗАТЬ КРЕСЛО В ЧАТЕ</a>
+        </div>
+
+        <!-- 6 -->
+        <div class="product-block">
+            <div class="product-header">
+                <div class="title">FUJIMO Gravity X-8</div>
+                <div class="price-block">
+                    <span class="current-price">440 000 ₽</span>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин Массажных Кресел | Альметьевск</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #1a1a1a; color: #ffffff; padding: 20px; line-height: 1.6; }
+        header { text-align: center; margin-bottom: 40px; padding: 30px; background-color: #262626; border-radius: 8px; border: 1px solid #333; }
+        header h1 { color: #ff3b30; font-size: 32px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+        .contacts { color: #ccc; font-size: 18px; }
+        .phone-link { color: #ffcc00; text-decoration: none; font-weight: bold; }
+        .phone-link:hover { color: #ff3b30; text-decoration: underline; }
+        
+        .catalog { max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+        .product-block { background-color: #262626; border-radius: 12px; padding: 35px; border: 1px solid #333; position: relative; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+        .product-block:hover { border-color: #ff3b30; }
+        
+        .badge { position: absolute; top: 20px; right: 20px; padding: 5px 12px; border-radius: 4px; font-size: 12px; font-weight: bold; text-transform: uppercase; }
+        .badge-hit { background-color: #ffcc00; color: #000; }
+        .badge-new { background-color: #28a745; color: #fff; }
+        .badge-premium { background-color: #007bff; color: #fff; }
+
+        .product-header { margin-bottom: 15px; padding-right: 120px; }
+        .title { font-size: 26px; color: #fff; font-weight: bold; margin-bottom: 5px; }
+        
+        .price-block { margin-bottom: 25px; display: flex; align-items: baseline; gap: 15px; }
+        .current-price { font-size: 26px; font-weight: bold; color: #ff3b30; }
+        .old-price { font-size: 18px; color: #777; text-decoration: line-through; }
+        
+        .section-title { font-size: 16px; color: #ffcc00; font-weight: bold; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; border-left: 3px solid #ff3b30; padding-left: 10px; }
+        .description { color: #e0e0e0; font-size: 15px; margin-bottom: 30px; text-align: justify; }
+        
+        .specs-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; background-color: #1e1e1e; border-radius: 8px; overflow: hidden; border: 1px solid #2d2d2d; }
+        .specs-table td { padding: 12px 18px; font-size: 14px; border-bottom: 1px solid #2d2d2d; line-height: 1.5; }
+        .specs-table tr:nth-child(even) { background-color: #232323; }
+        .specs-table td:first-child { color: #aaa; width: 45%; font-weight: 500; }
+        .specs-table td:last-child { color: #fff; }
+        .specs-table tr:last-child td { border-bottom: none; }
+        
+        .btn-buy { display: block; width: 100%; max-width: 350px; margin: 0 auto; padding: 15px 35px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 16px; background-color: #e60000; color: #fff; text-transform: uppercase; letter-spacing: 1px; transition: background-color 0.2s, transform 0.2s; text-decoration: none; text-align: center; }
+        .btn-buy:hover { background-color: #ff1a1a; transform: scale(1.02); }
+        
+        footer { text-align: center; margin-top: 80px; padding: 40px; color: #888; font-size: 14px; border-top: 1px solid #2d2d2d; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Премиальные Массажные Кресла</h1>
+        <p class="contacts">📍 г. Альметьевск, ул. Тукая, д. 80<br>📞 Телефон для справок: <a href="tel:+79173979853" class="phone-link">+7 (917) 397-98-53</a></p>
+    </header>
+
+    <main class="catalog">
+        
+        <!-- 1: OGAWA Зенит -->
+        <div class="product-block">
+            <span class="badge badge-premium">Флагман (-21%)</span>
+            <div class="product-header">
+                <div class="title">OGAWA Зенит | Zenith 5D</div>
+                <div class="price-block">
+                    <span class="current-price">1 980 000 ₽</span>
+                    <span class="old-price">2 500 000 ₽</span>
+                </div>
+            </div>
+            <div class="section-title">Подробное описание модели:</div>
+            <div class="description">Абсолютный лидер в индустрии аппаратного массажа. OGAWA Зенит объединяет искусственный интеллект и медицинский трекинг. Интегрированные биометрические сенсоры и датчики PPG замеряют частоту пульса, насыщение крови кислородом и индекс мышечного тонуса. ИИ анализирует зажатые зоны и формирует уникальную программу. Роботизированный 5D-привод с силиконовыми роликами ювелирно воспроизводит сложные движения рук терапевта. Удлиненная каретка осуществляет беспрерывную проработку от шеи до бедер, мягко вытягивая позвоночные диски.</div>
+            <div class="section-title">Полные технические характеристики:</div>
+            <table class="specs-table">
+                <tr><td>Тип массажного механизма</td><td>Интеллектуальный 5D интеллектуальный робот с независимыми осями вращения</td></tr>
+                <tr><td>Длина и форма направляющей</td><td>Сверхдлинная SL-образная анатомическая каретка (138 см)</td></tr>
+                <tr><td>Система сканирования тела</td><td>Двойное оптическое 3D-сканирование + биометрический трекинг усталости</td></tr>
+                <tr><td>Воздушно-компрессионная система</td><td>64 многокамерные подушки Volumetric Air с 5 уровнями интенсивности</td></tr>
+                <tr><td>Прогрев и теплотерапия</td><td>Графеновый трехзонный подогрев (спина, поясничный отдел, колени) до 45°C</td></tr>
+                <tr><td>Режим нулевой гравитации (Zero-G)</td><td>3 профессиональных угла наклона с полной ортопедической разгрузкой</td></tr>
+                <tr><td>Массаж стоп и икроножных мышц</td><td>Тройной ролик Gua Sha, компрессионный захват ахиллова сухожилия</td></tr>
+                <tr><td>Количество автоматических программ</td><td>32 специализированных режима (включая спортивные и мануальные)</td></tr>
+                <tr><td>Максимальная нагрузка и рост</td><td>Вес до 150 кг, рост пользователя от 150 до 200 см</td></tr>
+                <tr><td>Габариты в разложенном виде</td><td>185 х 82 х 95 см (требуется отступ от стены по технологии Zero Wall всего 5 см)</td></tr>
+                <tr><td>Мультимедиа и доп. функции</td><td>Surround Sound Bluetooth-акустика, встроенный ионизатор воздуха, USB 3.0</td></tr>
+                <tr><td>Потребляемая мощность / Питание</td><td>220 Вт / Стандартная сеть 220 В, 50 Гц</td></tr>
+            </table>
+            <a href="https://max.ru" target="_blank" class="btn-buy">🛒 ЗАКАЗАТЬ КРЕСЛО В ЧАТЕ</a>
+        </div>
+
+        <!-- 2: YAMAGUCHI Xi -->
+        <div class="product-block">
+            <span class="badge badge-hit">Hit (-15%)</span>
+            <div class="product-header">
+                <div class="title">YAMAGUCHI Xi Premium</div>
+                <div class="price-block">
+                    <span class="current-price">980 000 ₽</span>
+                    <span class="old-price">1 150 000 ₽</span>
+                </div>
+            </div>
+            <div class="section-title">Подробное описание модели:</div>
+            <div class="description">Легендарное кресло премиум-сегмента от Yamaguchi. Модель предлагает продвинутый двухкомпонентный роликовый массажный блок, который умеет выполнять одновременное разминание шеи и поясничного отдела с разной интенсивностью. Встроенная система светотерапии (хромотерапии) помогает быстро войти в состояние глубокой релаксации. Деликатная растяжка позвоночника убирает компрессию дисков после длительного сидения, восстанавливая гибкость тела.</div>
+            <div class="section-title">Полные технические характеристики:</div>
+            <table class="specs-table">
+                <tr><td>Тип массажного механизма</td><td>Двойной роботизированный механизм Dual-Core 4D</td></tr>
+                <tr><td>Длина и форма направляющей</td><td>Анатомический J-образный трек увеличенного охвата (140 см)</td></tr>
+                <tr><td>Система сканирования тела</td><td>Оптические сенсоры определения положения плеч и роста Smart Scan</td></tr>
+                <tr><td>Воздушно-компрессионная система</td><td>54 эластичные двухслойные подушки в области рук, плеч, бедер и ног</td></tr>
+                <tr><td>Прогрев и теплотерапия</td><td>Инфракрасный подогрев роликов и подставки для ног (от 40°C до 50°C)</td></tr>
+                <tr><td>Режим нулевой гравитации (Zero-G)</td><td>2 положения наклона (имитация космического полета)</td></tr>
+                <tr><td>Массаж стоп и икроножных мышц</td><td>Двухрядные ролики стопы, растирающие валики для голеней</td></tr>
+                <tr><td>Количество автоматических программ</td><td>24 эксклюзивные программы, включая японский массаж шиацу</td></tr>
+                <tr><td>Максимальная нагрузка и рост</td><td>Вес до 140 кг, рост пользователя от 155 до 195 см</td></tr>
+                <tr><td>Габариты в разложенном виде</td><td>178 х 78 х 90 см (слайдер-система раскладывания вперед вперед)</td></tr>
+                <tr><td>Мультимедиа и доп. функции</td><td>Акустика премиум-класса, беспроводная зарядка для смартфона</td></tr>
+                <tr><td>Потребляемая мощность / Питание</td><td>180 Вт / Стандартная сеть 220 В</td></tr>
+            </table>
+            <a href="https://max.ru" target="_blank" class="btn-buy">🛒 ЗАКАЗАТЬ КРЕСЛО В ЧАТЕ</a>
+        </div>
+
+        <!-- 3: CASADA Hilton 3 -->
+        <div class="product-block">
+            <span class="badge badge-new">New (-20%)</span>
+            <div class="product-header">
+                <div class="title">CASADA Hilton III 3D</div>
+                <div class="price-block">
+                    <span class="current-price">489 000 ₽</span>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин Массажных Кресел | Альметьевск</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #1a1a1a; color: #ffffff; padding: 20px; line-height: 1.6; }
+        header { text-align: center; margin-bottom: 40px; padding: 30px; background-color: #262626; border-radius: 8px; border: 1px solid #333; }
+        header h1 { color: #ff3b30; font-size: 32px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+        .contacts { color: #ccc; font-size: 18px; }
+        .phone-link { color: #ffcc00; text-decoration: none; font-weight: bold; }
+        .phone-link:hover { color: #ff3b30; text-decoration: underline; }
+        
+        .catalog { max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+        .product-block { background-color: #262626; border-radius: 12px; padding: 35px; border: 1px solid #333; position: relative; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+        .product-block:hover { border-color: #ff3b30; }
+        
+        .badge { position: absolute; top: 20px; right: 20px; padding: 5px 12px; border-radius: 4px; font-size: 12px; font-weight: bold; text-transform: uppercase; }
+        .badge-hit { background-color: #ffcc00; color: #000; }
+        .badge-new { background-color: #28a745; color: #fff; }
+        .badge-budget { background-color: #17a2b8; color: #fff; }
+        .badge-premium { background-color: #007bff; color: #fff; }
+
+        .product-header { margin-bottom: 15px; padding-right: 120px; }
+        .title { font-size: 26px; color: #fff; font-weight: bold; margin-bottom: 5px; }
+        
+        .price-block { margin-bottom: 25px; display: flex; align-items: baseline; gap: 15px; }
+        .current-price { font-size: 26px; font-weight: bold; color: #ff3b30; }
+        .old-price { font-size: 18px; color: #777; text-decoration: line-through; }
+        
+        .section-title { font-size: 16px; color: #ffcc00; font-weight: bold; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; border-left: 3px solid #ff3b30; padding-left: 10px; }
+        .description { color: #e0e0e0; font-size: 15px; margin-bottom: 30px; text-align: justify; }
+        
+        .specs-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; background-color: #1e1e1e; border-radius: 8px; overflow: hidden; border: 1px solid #2d2d2d; }
+        .specs-table td { padding: 12px 18px; font-size: 14px; border-bottom: 1px solid #2d2d2d; line-height: 1.5; }
+        .specs-table tr:nth-child(even) { background-color: #232323; }
+        .specs-table td:first-child { color: #aaa; width: 45%; font-weight: 500; }
+        .specs-table td:last-child { color: #fff; }
+        .specs-table tr:last-child td { border-bottom: none; }
+        
+        .btn-buy { display: block; width: 100%; max-width: 350px; margin: 0 auto; padding: 15px 35px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 16px; background-color: #e60000; color: #fff; text-transform: uppercase; letter-spacing: 1px; transition: background-color 0.2s, transform 0.2s; text-decoration: none; text-align: center; }
+        .btn-buy:hover { background-color: #ff1a1a; transform: scale(1.02); }
+        
+        footer { text-align: center; margin-top: 80px; padding: 40px; color: #888; font-size: 14px; border-top: 1px solid #2d2d2d; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Премиальные Массажные Кресла</h1>
+        <p class="contacts">📍 г. Альметьевск, ул. Тукая, д. 80<br>📞 Телефон для справок: <a href="tel:+79173979853" class="phone-link">+7 (917) 397-98-53</a></p>
+    </header>
+
+    <main class="catalog">
+        
+        <!-- БЮДЖЕТНАЯ МОДЕЛЬ 1: FUJIMO COMFORT F133 -->
+        <div class="product-block">
+            <span class="badge badge-budget">Доступно (-35%)</span>
+            <div class="product-header">
+                <div class="title">FUJIMO Comfort F133 Бежевый</div>
+                <div class="price-block">
+                    <span class="current-price">129 000 ₽</span>
+                    <span class="old-price">199 000 ₽</span>
+                </div>
+            </div>
+            <div class="section-title">Подробное описание модели:</div>
+            <div class="description">Самая доступная и компактная модель в линейке Fujimo, разработанная специально для небольших квартир и загородных домов. Несмотря на бюджетную стоимость, кресло оснащено полноценной L-образной кареткой, которая позволяет роликам тщательно прорабатывать спину от шеи до ягодичной зоны. Отличный вариант для ежедневного базового расслабления, снятия усталости после рабочего дня и улучшения общего тонуса мышц без лишних затрат.</div>
+            <div class="section-title">Полные технические характеристики:</div>
+            <table class="specs-table">
+                <tr><td>Тип массажного механизма</td><td>Надежный 2D/3D механизм с плавающими роликами</td></tr>
+                <tr><td>Длина и форма направляющей</td><td>Удлиненный L-образный эргономичный трек (110 см)</td></tr>
+                <tr><td>Система сканирования тела</td><td>Автоматическая подстройка под высоту плеч пользователя</td></tr>
+                <tr><td>Воздушно-компрессионная система</td><td>24 лимфодренажные подушки (плечи, руки, икры)</td></tr>
+                <tr><td>Прогрев и теплотерапия</td><td>Мягкий тепловой прогрев поясничной зоны (до 40°C)</td></tr>
+                <tr><td>Режим нулевой гравитации (Zero-G)</td><td>1 базовое положение для снижения нагрузки на позвоночник</td></tr>
+                <tr><td>Массаж стоп и ног</td><td>Компрессионное сжатие голеней, акупунктурная пластина для стоп</td></tr>
+                <tr><td>Количество автоматических программ</td><td>6 базовых экспресс-режимов массажа</td></tr>
+                <tr><td>Максимальная нагрузка и рост</td><td>Вес до 110 кг, рост пользователя от 150 до 185 см</td></tr>
+                <tr><td>Габариты в рабочем виде</td><td>145 х 72 х 85 см (компактный форм-фактор)</td></tr>
+                <tr><td>Мультимедиа и доп. функции</td><td>Bluetooth-колонки для прослушивания музыки, пульт с ЖК-дисплеем</td></tr>
+                <tr><td>Потребляемая мощность / Питание</td><td>90 Вт (сверхэкономичное энергопотребление) / 220 В</td></tr>
+            </table>
+            <a href="https://max.ru" target="_blank" class="btn-buy">🛒 ЗАКАЗАТЬ КРЕСЛО В ЧАТЕ</a>
+        </div>
+
+        <!-- БЮДЖЕТНАЯ МОДЕЛЬ 2: FUJIMO LITE CLASSIC F233 -->
+        <div class="product-block">
+            <span class="badge badge-budget">Хит-Цена (-30%)</span>
+            <div class="product-header">
+                <div class="title">FUJIMO Lite Classic F233 Коричневый</div>
+                <div class="price-block">
+                    <span class="current-price">185 000 ₽</span>
+                    <span class="old-price">265 000 ₽</span>
+                </div>
+            </div>
+            <div class="section-title">Подробное описание модели:</div>
+            <div class="description">Прекрасно сбалансированная модель начального уровня, предлагающая полноценный функционал за разумные деньги. Fujimo Lite Classic отличается усовершенствованным роликовым механизмом, который мягко имитирует ручной разминающий и постукивающий массаж. Кресло идеально подходит для пожилых людей благодаря бережным автоматическим программам. Встроенный блок Zero-G переводит тело в положение, где ноги находятся чуть выше уровня сердца, полностью расслабляя суставы.</div>
+            <div class="section-title">Полные технические характеристики:</div>
+            <table class="specs-table">
+                <tr><td>Тип массажного механизма</td><td>3D-привод деликатного раскатывающего и разминающего действия</td></tr>
+                <tr><td>Длина и форма направляющей</td><td>Анатомическая SL-образная каретка (120 см)</td></tr>
+                <tr><td>Система сканирования тела</td><td>Сенсорное определение изгиба спины перед стартом</td></tr>
+                <tr><td>Воздушно-компрессионная система</td><td>32 воздушные подушки с 3 уровнями интенсивности давления</td></tr>
+                <tr><td>Прогрев и теплотерапия</td><td>Инфракрасный прогрев спинки кресла для подготовки мышц к массажу</td></tr>
+                <tr><td>Режим нулевой гравитации (Zero-G)</td><td>2 положения глубокого ортопедического наклона</td></tr>
+                <tr><td>Массаж стоп и ног</td><td>Роликовый массаж подошвы (1 ряд роликов), компрессия икр</td></tr>
+                <tr><td>Количество автоматических программ</td><td>10 встроенных режимов (Релакс, Восстановление, Шея/Плечи и др.)</td></tr>
+                <tr><td>Максимальная нагрузка и рост</td><td>Вес до 120 кг, рост пользователя от 150 до 190 см</td></tr>
+                <tr><td>Габариты в рабочем виде</td><td>155 х 74 х 88 см (требует отступ от стены 15 см)</td></tr>
+                <tr><td>Мультимедиа и доп. функции</td><td>Встроенная Bluetooth-аудиосистема, удобный карман для телефона</td></tr>
+                <tr><td>Потребляемая мощность / Питание</td><td>120 Вт / 220 В</td></tr>
+            </table>
+            <a href="https://max.ru" target="_blank" class="btn-buy">🛒 ЗАКАЗАТЬ КРЕСЛО В ЧАТЕ</a>
+        </div>
+
+        <!-- БЮДЖЕТНАЯ МОДЕЛЬ 3: FUJIMO SMART F300 -->
+        <div class="product-block">
+            <span class="badge badge-hit">Популярное (-25%)</span>
+            <div class="product-header">
+                <div class="title">FUJIMO Smart F300 Черный</div>
+                <div class="price-block">
+                    <span class="current-price">245 000 ₽</span>
+                    <span class="old-price">328 000 ₽</span>
+                </div>
+            </div>
+            <div class="section-title">Подробное описание модели:</div>
